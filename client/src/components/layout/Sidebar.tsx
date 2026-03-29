@@ -1,5 +1,6 @@
 import homeIcon from "@/assets/icons/home.png";
 import settingIcon from "@/assets/icons/setting.png";
+import calenderIcon from "@/assets/icons/calendar.png";
 import {
   Sidebar as SSidebar,
   SidebarContent,
@@ -19,6 +20,11 @@ const Sidebar = () => {
             <SidebarMenu>
               {[
                 { name: "Dashboard", icon: homeIcon, url: "/" },
+                { 
+                  name: "Monthly Expense", 
+                  icon: calenderIcon, // 추후 calendarIcon 등으로 변경 권장
+                  url: "/wallpaper" 
+                },
                 { name: "Budget", icon: settingIcon, url: "/budget" },
               ].map((item) => (
                 <SidebarMenuItem key={item.name}>
